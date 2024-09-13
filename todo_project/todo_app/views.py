@@ -15,15 +15,8 @@ from todo_app.serializer import TodoSerializer
 def get_todos(request, id=None):
     try:
         if request.method == 'GET':
-            if id is None:
-                todos = Todo.objects.all().values('id', 'title', 'description', 'completed')
-                return JsonResponse(list(todos), safe=False)
-            else:
-                try:
-                    todo = Todo.objects.values('id', 'title', 'description', 'completed').get(id=id)
-                    return JsonResponse(todo)
-                except Todo.DoesNotExist:
-                    return JsonResponse({'error': 'Todo not found'}, status=404)
+            todos = Todo.objects.all().values('id', 'title', 'description', 'completed')
+            return JsonResponse(list(todos), safe=False)
 
         elif request.method == 'POST':
             data = json.loads(request.body)
@@ -86,4 +79,3 @@ def modify_todo(request, id):
         import traceback
         traceback.print_exc()
         return JsonResponse({'error': 'Invalid data'}, status=400)
-
