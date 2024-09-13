@@ -61,13 +61,13 @@ Open your web browser and go to http://127.0.0.1:8000/ to view the application. 
 ## API Endpoints
 
 - **GET /api/todos/** - Retrieve all to-do items
-- 
+  
 - **GET /api/todos/<id>/** - Retrieve a specific to-do item by ID
-- 
+  
 - **POST /api/todos/** - Create a new to-do item
-- 
+  
 - **PUT /api/todos/<id>/** - Update an existing to-do item by ID
-
+  
 - **DELETE /api/todos/<id>/** - Delete a to-do item by ID
 
 
