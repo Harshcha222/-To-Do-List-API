@@ -56,7 +56,6 @@ A Django-based API for managing tasks (Todos). It allows you to create, read, up
     Use Postman or cURL to test the following endpoints:
 
     - **Retrieve All Todos**: `GET /todos/`
-    - **Retrieve a Specific Todo**: `GET /todos/<id>/`
     - **Create a New Todo**: `POST /todos/` with JSON body
     - **Update a Todo**: `PUT /todos/<id>/` with JSON body
     - **Delete a Todo**: `DELETE /todos/<id>/`
