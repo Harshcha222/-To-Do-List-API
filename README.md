@@ -77,6 +77,10 @@ Open your web browser and go to http://127.0.0.1:8000/ to view the application. 
   
 - ipdb==0.13.13
 
+- ipython==8.26.0
+
+- sqlparse==0.5.0
+
 
 ### License
 For any questions or feedback, please contact rchaturvedi087@gmail.com.
