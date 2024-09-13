@@ -64,6 +64,7 @@ Open your web browser and go to http://127.0.0.1:8000/ to view the application. 
 - **PUT /api/todos/<id>/** - Update an existing to-do item by ID
 - **DELETE /api/todos/<id>/** - Delete a to-do item by ID
 
+
 ### Usage Instructions
 
 - **Create Task**: Send a POST request to `/api/todos/` with JSON data including `title`, `description`, and `completed` fields.
