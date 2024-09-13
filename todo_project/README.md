@@ -15,7 +15,7 @@ To run this project locally, you need:
 ### 1. Clone the Repository
 Open your terminal and run:
 ```bash
-git clone https://github.com/your-username/todo_project.git
+git clone https://github.com/Harshcha222/-To-Do-List-API.git
 cd todo_project
 ```
 ### 2. Create a Virtual Environment (Optional but Recommended)
@@ -87,4 +87,4 @@ ipython==8.26.0
 
 sqlparse==0.5.0
 ### License
-For any questions or feedback, please contact your-email@example.com.
+For any questions or feedback, please contact rchaturvedi087@gmail.com.
