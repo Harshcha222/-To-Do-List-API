@@ -59,16 +59,24 @@ python manage.py runserver
 Open your web browser and go to http://127.0.0.1:8000/ to view the application. The endpoints for managing Todos are:
 
 GET /api/todos/ - Retrieve all to-do items
+
 GET /api/todos/<id>/ - Retrieve a specific to-do item by ID
+
 POST /api/todos/ - Create a new to-do item
+
 PUT /api/todos/<id>/ - Update an existing to-do item by ID
+
 DELETE /api/todos/<id>/ - Delete a to-do item by ID
 
 ### Usage Instructions
 Create Task: Send a POST request to /api/todos/ with JSON data including title, description, and completed fields.
+
 Retrieve Tasks: Send a GET request to /api/todos/ to get a list of all to-do items. To get a specific item, include the item's ID in the URL (e.g., /api/todos/1/).
+
 Update Task: Send a PUT request to /api/todos/<id>/ with updated JSON data.
+
 Delete Task: Send a DELETE request to /api/todos/<id>/ to remove a specific to-do item
+
 ### Dependencies
 Django==5.0.6
 
