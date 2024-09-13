@@ -68,22 +68,18 @@ Open your web browser and go to http://127.0.0.1:8000/ to view the application. 
 
 
 ### Usage Instructions
-
+- **Retrieve All Tasks**: Send a GET request to `/api/todos/` to get a list of all to-do items.
 - **Create Task**: Send a POST request to `/api/todos/` with JSON data including `title`, `description`, and `completed` fields.
 - **Update Task**: Send a PUT request to `/api/todos/<id>/` with updated JSON data.
 - **Delete Task**: Send a DELETE request to `/api/todos/<id>/` to remove a specific to-do item.
 
+
 ### Dependencies
-- Django==5.0.6
-  
-- djangorestframework==3.15.2
-  
-- ipdb==0.13.13
+Django==5.0.6
 
-- ipython==8.26.0
+djangorestframework==3.15.2
 
-- sqlparse==0.5.0
-
+sqlparse==0.5.0
 
 ### License
 For any questions or feedback, please contact rchaturvedi087@gmail.com.
