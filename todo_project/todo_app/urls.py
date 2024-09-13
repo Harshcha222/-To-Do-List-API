@@ -1,4 +1,4 @@
-from .views import get_todos, add_todo, modify_todo
+from .views import get_todos, modify_todo
 from django.urls import path
 
 urlpatterns = [
