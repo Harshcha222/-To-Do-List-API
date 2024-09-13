@@ -58,9 +58,6 @@ python manage.py runserver
 ### 7. Access the Application
 Open your web browser and go to http://127.0.0.1:8000/ to view the application. The endpoints for managing Todos are:
 ## API Endpoints
-## API Endpoints
-## API Endpoints
-
 - **GET /api/todos/** - Retrieve all to-do items
 - **POST /api/todos/** - Create a new to-do item
 - **PUT /api/todos/<id>/** - Update an existing to-do item by ID
