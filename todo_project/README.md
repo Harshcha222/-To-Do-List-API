@@ -68,7 +68,7 @@ Open your web browser and go to http://127.0.0.1:8000/ to view the application. 
 ### Usage Instructions
 
 - **Create Task**: Send a POST request to `/api/todos/` with JSON data including `title`, `description`, and `completed` fields.
-- **Retrieve Tasks**: Send a GET request to `/api/todos/` to get a list of all to-do items. To get a specific item, include the item's ID in the URL (e.g., `/api/todos/1/`).
+- **Retrieve Tasks**: Send a GET request to `/api/todos/` to get a list of all to-do items.
 - **Update Task**: Send a PUT request to `/api/todos/<id>/` with updated JSON data.
 - **Delete Task**: Send a DELETE request to `/api/todos/<id>/` to remove a specific to-do item.
 
