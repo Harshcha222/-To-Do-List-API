@@ -9,7 +9,8 @@ SECRET_KEY = 'django-insecure-7ipxn-lq#5u(p2bv*&h!)_$f=&ni+=js6d!^3+0&=!3#-g0-q!
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['*']  # Replace with your actual domain or leave as '*' for testing
+# Allowed hosts - specify your domain names here
+ALLOWED_HOSTS = ['*']  # Replace '*' with your actual domain names or IP addresses for production
 
 # Application definition
 INSTALLED_APPS = [
@@ -33,12 +34,12 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'todo_project.urls'
+ROOT_URLCONF = 'core.urls'
 
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [],  # Add directories here if you have custom template locations
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -51,9 +52,9 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'todo_project.wsgi.application'
+WSGI_APPLICATION = 'core.wsgi.application'
 
-# Database
+# Database configuration
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
@@ -84,7 +85,7 @@ USE_I18N = True
 USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
-STATIC_URL = 'static/'
+STATIC_URL = '/static/'
 STATIC_ROOT = BASE_DIR / 'staticfiles'
 
 # Default primary key field type
