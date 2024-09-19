@@ -46,7 +46,7 @@ def get_todos(request, id=None):
         return JsonResponse({'error': 'Invalid data'}, status=400)
 
 @csrf_exempt
-@require_http_methods(["PUT", "DELETE"])
+@require_http_methods(["PUT", "DELETE","GET"])
 def modify_todo(request, id):
     try:
         if request.method == 'PUT':
@@ -74,6 +74,14 @@ def modify_todo(request, id):
                 return JsonResponse({'message': 'Todo deleted successfully'})
             except Todo.DoesNotExist:
                 return JsonResponse({'error': 'Todo not found'}, status=404)
+        elif request.method=='GET':
+            try:
+                todo=Todo.objects.filter(id=id).values('id', 'title', 'description', 'completed')
+                return JsonResponse(list(todo),safe=False)
+            except Todo.DoesNotExist:
+                return JsonResponse({'error':'not found'})
+
+
 
     except Exception as e:
         import traceback
